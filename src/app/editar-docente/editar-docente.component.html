@@ -1,0 +1,27 @@
+<div class="docenteDiv">
+    <div class="listadodoce">
+        <ul class="docente">
+            <li *ngFor="let Docente of docentes"
+            [class.selectd]="Docente === selectd">
+                <button (click) = "onseleccion(Docente)" class="botones">
+                    <span>{{Docente.id}}-{{Docente.nombre}}</span>
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <div *ngIf="selectd" class="informacionDocente">
+        <label>
+            <input [(ngModel)]="selectd.nombre" placeholder="name"/>
+            <input [(ngModel)]="selectd.apellido" placeholder="name"/>
+            <input [(ngModel)]="selectd.licenciatura" placeholder="name"/>
+          </label>        
+    </div>
+   
+    
+    </div>
+    <div>
+       
+
+</div>
+

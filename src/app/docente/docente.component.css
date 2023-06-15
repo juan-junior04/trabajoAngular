@@ -1,0 +1,37 @@
+.ListadoDoce{
+    display: flex;
+    background-color: bisque;
+}
+.docenteDiv{
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    padding: 100px;
+    gap: 50px;
+}
+    
+.listadodoce{
+    margin-left: 280px;
+}
+.docente{
+
+}
+
+.botones{
+    height: 32px;
+    width: 212px;
+   margin: 9px;
+}
+
+.docente li {
+    list-style-type: none;
+}
+.docente li.selectd button{
+ background-color: blue;
+ 
+}
+.informacionDocente{
+    width: 180Px;
+    background-color: red;
+    height: 182px;
+}
